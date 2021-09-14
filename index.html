@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <title>My Tasks</title>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <img src="./LOGO-ROXA-LETREIRO.png" alt="">
+                
+            </header>
+        </div>
+        <div class="container">
+            <section class="criaTask"> 
+                <header> 
+                   <h1>Minhas Tasks</h1> 
+                   <div class="input-group">
+                       <input type="text" placeholder="Adcionar uma nova task" id="novaTask">
+                       <button onclick= seeInputValue()>
+                           Enviar
+                       </button>
+                   </div>
+                </header>
+                <div class="seeTaskDiv">
+
+                </div>
+            </section>
+        </div>
+    </body>
+    <script>
+        function seeInputValue() {
+            let inputValue = document.querySelector('#novaTask').value
+            console.log(inputValue)
+
+        }
+    </script>
+</html>
